@@ -121,8 +121,10 @@ $colIdx = 1;
 foreach( $ttgObj->ttgFields as $curKey => $curVal ) {
 
 	// Hotwire the %Date Now% field and fill in with the current date
-	if( $curKey == "Date Now" )
+	if( $curKey == "Date Now" ) {
 		$ttgObj->ttgFields['Date Now']['data'] = strftime( $cfg_datestring );
+		continue;
+	}
 
 	print( str_pad( $curKey, $maxLen ) . " (" . str_pad( $colIdx, $numcols, " ", STR_PAD_RIGHT ) . "): " );
 
@@ -184,7 +186,7 @@ foreach( $csvfile as $currow ) {
 
 	if( $do_xclip ) {
 
-		$xfp = popen( "/usr/bin/xclip -selection clipboard -i", "w" );
+		$xfp = popen( dirname( __FILE__ ) . "/xclip -selection clipboard -i", "w" );
 
 		if( $xfp ) {
 

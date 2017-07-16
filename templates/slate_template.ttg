@@ -1,0 +1,544 @@
+Module Text
+Program Flame
+Version 2018.1
+FileVersion 4.19999981
+CreationDate Sun Jul 16 16:43:20 2017
+
+FrameWidth 1920
+FrameHeight 1080
+FrameAspectRatio 1.77777779
+
+	CurrentFrame 1
+	MaxFrames -1
+	UpdateMode yes
+	PlayLockMode no
+	UndoLevels 10
+	FieldRenderingModeAuto 0
+	GaussianBlur yes
+	GlobalBlur yes
+	BlurOn no
+	BlurLevel 5
+	AntiAliasingLevel 2
+	AntiAliasingSoftness 1
+	MultiSample 8
+	PreRender 1
+	CropBox no
+	CropLeft 0
+	CropRight 0
+	CropBottom 0
+	CropTop 0
+	MatteKey yes
+End
+NumberOfLayer 3
+
+#
+# text layer channels
+#
+Channel translation/x
+	Extrapolation constant
+	Value -506
+	End
+Channel translation/y
+	Extrapolation constant
+	Value 152
+	End
+Channel translation/speed
+	Extrapolation constant
+	Value 0
+	End
+Channel shear/x
+	Extrapolation constant
+	Value 0
+	End
+Channel shear/y
+	Extrapolation constant
+	Value 0
+	End
+Channel scale/x
+	Extrapolation constant
+	Value 100
+	End
+Channel scale/y
+	Extrapolation constant
+	Value 100
+	End
+Channel rotation
+	Extrapolation constant
+	Value 0
+	End
+ChannelEnd
+TransformHasOffset no
+End
+
+#
+# text layer data
+#
+ExtraChannels
+Channel transparency
+	Extrapolation constant
+	Value 100
+	Uncollapsed
+	End
+ChannelEnd
+BlurShadow no
+BlurShadowFactor 5
+DocWidth 1280
+DocHeight 0
+LayerAxisLocked no
+DocBackground no
+ColourBack 100 100 100 100
+DocInterpType 4
+FontType 4
+FontName /opt/Autodesk/font/Discreet-Bold.font
+FontSize 58
+UnderlineWidth 50
+FontStyle Fill
+ColourFill 92.8571396 92.8571396 92.8571396 100
+ColourOut 0 0 100 100
+ColourDrop 0 0 0 100
+ColorUnderline 100 100 100 100
+TextLength 13
+Text 37 67 108 105 101 110 116 32 78 97 109 101 37
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+TextLength 11
+Text 37 83 112 111 116 32 78 97 109 101 37
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+TextLength 11
+Text 37 83 112 111 116 32 67 111 100 101 37
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+TextLength 10
+Text 37 68 117 114 97 116 105 111 110 37
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+TextLength 10
+Text 37 68 97 116 101 32 78 111 119 37
+ParagraphType Last
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+EndLayer
+
+#
+# text layer channels
+#
+Channel translation/x
+	Extrapolation constant
+	Value 0
+	End
+Channel translation/y
+	Extrapolation constant
+	Value 355.720001
+	End
+Channel translation/speed
+	Extrapolation constant
+	Value 0
+	End
+Channel shear/x
+	Extrapolation constant
+	Value 0
+	End
+Channel shear/y
+	Extrapolation constant
+	Value 0
+	End
+Channel scale/x
+	Extrapolation constant
+	Value 100
+	End
+Channel scale/y
+	Extrapolation constant
+	Value 100
+	End
+Channel rotation
+	Extrapolation constant
+	Value 0
+	End
+ChannelEnd
+TransformHasOffset yes
+End
+
+#
+# text layer data
+#
+ExtraChannels
+Channel transparency
+	Extrapolation constant
+	Value 100
+	Uncollapsed
+	End
+ChannelEnd
+BlurShadow no
+BlurShadowFactor 5
+DocWidth 1535
+DocHeight 0
+LayerAxisLocked no
+DocBackground no
+ColourBack 100 100 100 100
+DocInterpType 4
+FontType 4
+FontName /opt/Autodesk/font/Discreet-Bold.font
+FontSize 90
+UnderlineWidth 50
+FontStyle Fill
+ColourFill 1.60717964 67.7148666 100 100
+ColourOut 0 0 100 100
+ColourDrop 0 0 0 100
+ColorUnderline 100 100 100 100
+TextLength 11
+Text 102 108 97 109 101 115 108 97 116 101 114
+FontSize 58
+ColourFill 49.0234375 49.0234375 49.0234375 100
+ColourOut 0 0 100 100
+ColourDrop 0 0 0 100
+ColorUnderline 100 100 100 100
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel 000_<f>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 001_<l>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 002_<a>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 003_<m>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 004_<e>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 005_<s>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 006_<l>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 007_<a>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 008_<t>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 009_<e>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+Channel 010_<r>/attributes/size
+	Extrapolation constant
+	Value 90
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+FontType 4
+FontName /opt/Autodesk/font/Discreet.afm
+TextLength 22
+Text 101 120 97 109 112 108 101 32 115 108 97 116 101 32 116 101 109 112 108 97 116 101
+ParagraphType Last
+
+#
+# layer paragraph channels
+#
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Left
+LeftMargin 0
+LeftIndent 0
+RightMargin 1535
+End
+EndLayer
+
+#
+# text layer channels
+#
+Channel translation/x
+	Extrapolation constant
+	Value -750
+	End
+Channel translation/y
+	Extrapolation constant
+	Value 152
+	End
+Channel translation/speed
+	Extrapolation constant
+	Value 0
+	End
+Channel shear/x
+	Extrapolation constant
+	Value 0
+	End
+Channel shear/y
+	Extrapolation constant
+	Value 0
+	End
+Channel scale/x
+	Extrapolation constant
+	Value 100
+	End
+Channel scale/y
+	Extrapolation constant
+	Value 100
+	End
+Channel rotation
+	Extrapolation constant
+	Value 0
+	End
+ChannelEnd
+TransformHasOffset no
+End
+
+#
+# text layer data
+#
+ExtraChannels
+Channel transparency
+	Extrapolation constant
+	Value 100
+	Uncollapsed
+	End
+ChannelEnd
+BlurShadow no
+BlurShadowFactor 5
+DocWidth 227
+DocHeight 0
+LayerAxisLocked no
+DocBackground no
+ColourBack 100 100 100 100
+DocInterpType 4
+FontType 4
+FontName /opt/Autodesk/font/Discreet.afm
+FontSize 58
+UnderlineWidth 50
+FontStyle Fill
+ColourFill 29.4921875 29.4921875 29.4921875 100
+ColourOut 0 0 100 100
+ColourDrop 0 0 0 100
+ColorUnderline 100 100 100 100
+TextLength 7
+Text 67 108 105 101 110 116 58
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Right
+LeftMargin 0
+LeftIndent 0
+RightMargin 227
+End
+TextLength 6
+Text 84 105 116 108 101 58
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Right
+LeftMargin 0
+LeftIndent 0
+RightMargin 227
+End
+TextLength 5
+Text 67 111 100 101 58
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Right
+LeftMargin 0
+LeftIndent 0
+RightMargin 227
+End
+TextLength 7
+Text 76 101 110 103 116 104 58
+ParagraphType Inside
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Right
+LeftMargin 0
+LeftIndent 0
+RightMargin 227
+End
+TextLength 5
+Text 68 97 116 101 58
+ParagraphType Last
+
+#
+# layer paragraph channels
+#
+Channel separation
+	Extrapolation constant
+	Value 4
+	End
+ChannelEnd
+TransformHasOffset no
+End
+#
+# layer paragraph ruler
+#
+Justification Justify_Right
+LeftMargin 0
+LeftIndent 0
+RightMargin 227
+End
+EndLayer
+EndGen
