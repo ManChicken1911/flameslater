@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 
-// flameslater v1.00 beta (c) 2017 Bob Maple (bobm at burner dot com)
+// flameslater v1.00 beta 2 (c) 2017 Bob Maple (bobm at burner dot com)
 //
 // Licensed under the Creative Commons Attribution-ShareAlike (CC BY-SA)
 // https://creativecommons.org/licenses/by-sa/4.0/
@@ -21,7 +21,8 @@ if( $argc < 2 ) {
 	print( "  -d           Enable debug output\n" );
 	print( "  -n           No text setups (implies -x)\n" );
 	print( "  -x           Copy spot codes to clipboard with xclip\n" );
-	print( "  -ds          Don't strip dashes from spot codes copied to the clipboard\n\n" );
+	print( "  -ds          Don't strip dashes from spot codes copied to the clipboard\n" );
+	print( "  -sf          Skip the first row of CSVFILE when generating slates\n\n" );
 
 	// Spit out a list of templates
 
@@ -52,6 +53,7 @@ $do_xclip = FALSE;
 $no_texts = FALSE;
 $do_debug = FALSE;
 $do_strip = TRUE;
+$skip_row = FALSE;
 
 $ttg_template = dirname( __FILE__ ) . "/templates/slate_template.ttg";
 
@@ -61,6 +63,8 @@ for( $i = 2; $i < $argc; $i++ ) {
 
 	if( $argv[$i] == "-x" )
 		$do_xclip = TRUE;
+	if( $argv[$i] == "-sf" )
+		$skip_row = TRUE;
 	if( $argv[$i] == "-ds" )
 		$do_strip = FALSE;
 	if( $argv[$i] == "-n" ) {
@@ -146,6 +150,11 @@ if( $do_xclip == TRUE )
 // Make some slates
 
 foreach( $csvfile as $currow ) {
+
+	if( $skip_row ) {
+		$skip_row = FALSE;
+		continue;
+	}
 
 	$csv_columns = str_getcsv( $currow );
 	$tmp         = trim( $csv_columns[0] );

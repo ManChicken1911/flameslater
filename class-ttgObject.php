@@ -64,23 +64,14 @@ class ttgObject {
 	// Replace the $ttg_field in the template with $string
 
 		$ttg_key = $this->ttgFields[$ttg_field]['line'];
-		$this->ttgData[$ttg_key]   = "Text " . $this->STRtoASCII( $string );
-		$this->ttgData[$ttg_key-1] = "TextLength " . strlen( $string );
-	}
 
-	function STRtoASCII( $string ) {
-	// Encode a normal string to a string of space-separated ASCII codes
-
-		$ascii_string = "";
-
-		for( $i = 0; $i < strlen( $string ); $i++ )
-			$ascii_string[] = ord( $string[$i] );
-
-		return( implode( " ", $ascii_string ) );
+		$this->ttgData[$ttg_key]   = "Text " . $this->UTFtoDEC( $string, $codecount );
+		$this->ttgData[$ttg_key-1] = "TextLength " . $codecount;
 	}
 
 	function ASCIItoSTR( $ascii ) {
 	// Decode a string of space-separated ASCII codes into a normal string
+	// Not UTF8-aware - field names should be kept simple for now
 
 		$codes  = explode( " ", trim( $ascii ) );
 		$string = "";
@@ -90,6 +81,42 @@ class ttgObject {
 		}
 
 		return( $string );
+	}
+
+	function UTFtoDEC( $string, &$codecount ) {
+	// Decode a (possibly) UTF8-encoded string to a string of space-separated decimal codes
+
+		$utfcodes = array();
+
+		for( $i = 0; $i < strlen( $string ); ) {
+
+			$utfbytes = 1;
+
+				 if( ($string[$i] & "\xE0") === "\xC0" ) $utfbytes = 2;
+			else if( ($string[$i] & "\xF0") === "\xE0" ) $utfbytes = 3;
+			else if( ($string[$i] & "\xF8") === "\xF0" ) $utfbytes = 4;
+
+			switch( $utfbytes ) {
+
+				case 1:	$utfcodes[] = ord( $string[$i] );
+						$i++;
+						break;
+
+				case 2:	$utfcodes[] = (( ord( $string[$i] ) & 0x1F) << 6) | (ord( $string[$i+1] ) & 0x3F);
+						$i += 2;
+						break;
+
+				case 3:	$utfcodes[] = ((ord( $string[$i] ) & 0x0F) << 12) | ((ord( $string[$i+1] ) & 0x3F) << 6) | (ord( $string[$i+2] ) & 0x3F);
+						$i += 3;
+						break;
+
+				case 3: $utfcodes[] = ((ord( $chr[0] ) & 0x07) << 18) | ((ord( $chr[1] ) & 0x3F) << 12) | ((ord( $chr[2] ) & 0x3F) << 6) | (ord( $chr[3] ) & 0x3F);
+						$i += 4;
+			}
+		}
+
+		$codecount = count( $utfcodes );
+		return( implode( " ", $utfcodes ) );
 	}
 
 /*	function STRtoFlameText( $string ) {
