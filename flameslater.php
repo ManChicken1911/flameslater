@@ -97,7 +97,7 @@ $ttgObj = new ttgObject( $ttg_template );
 $ttgObj->FindFields();
 
 if( !isset( $ttgObj->ttgFields['Spot Code'] ) )
-	die( "Error: no %Spot Code% field found in the template." );
+	die( "Error: no %Spot Code% field found in the template.\n" );
 
 // Find longest field name for display padding
 

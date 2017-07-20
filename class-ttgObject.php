@@ -41,7 +41,7 @@ class ttgObject {
 
 		foreach( $this->ttgData as $curKey => $curVal ) {
 
-			if( preg_match( "/^Text 37 (.*) 37$/", $curVal, $matches ) ) {
+			if( preg_match( "/^Text.* 37 (.*) 37( |$)/", $curVal, $matches ) ) {
 
 				$field_name = $this->ASCIItoSTR( $matches[1] );
 				$this->ttgFields[$field_name]['line'] = $curKey;
